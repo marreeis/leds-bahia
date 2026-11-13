@@ -23,7 +23,7 @@ window.SITE = {
   exibicoesPorDia: 720,
 
   frames: {
-    total: 140, // frames fatiados do vídeo (desktop 1600px · celular recorte central 880×720)
+    total: 140, // frames fatiados do vídeo (desktop 1920×1080 · celular recorte central nativo 1320×1080)
     desktop: "assets/frames/desktop/f_{n}.webp",
     mobile: "assets/frames/mobile/f_{n}.webp",
   },
