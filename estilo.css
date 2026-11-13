@@ -69,7 +69,10 @@ svg { display: block; }
 .rodape-marca { display: grid; gap: 8px; }
 .rodape-marca .marca-logo { height: 64px; }
 .rodape-marca small { font: 700 10px/1 var(--fonte-titulo); letter-spacing: .14em; text-transform: uppercase; color: var(--brilho-claro); }
-@media (max-width: 760px) { .topo .marca-logo { height: 46px; } }
+/* Topo usa a versão deitada (símbolo + nome); rodapé e contato usam a empilhada */
+.topo .marca-logo { height: 44px; }
+@media (max-width: 760px) { .topo .marca-logo { height: 34px; } }
+@media (max-width: 520px) { .topo .marca-logo { height: 30px; } }
 .marca-texto { display: grid; font-family: var(--fonte-titulo); font-weight: 900; font-size: 21px; letter-spacing: .04em; line-height: 1; }
 .marca-texto small { font-size: 8.5px; font-weight: 700; letter-spacing: .34em; color: var(--brilho-claro); margin-top: 6px; text-transform: uppercase; }
 .menu { display: flex; gap: 28px; align-items: center; font: 600 12.5px/1 var(--fonte-titulo); letter-spacing: .14em; text-transform: uppercase; }
@@ -82,7 +85,7 @@ svg { display: block; }
 }
 .menu-cta svg { width: 17px; height: 17px; }
 @media (max-width: 1020px) { .menu a:not(.menu-cta) { display: none; } }
-@media (max-width: 420px) { .menu-cta span { display: none; } .menu-cta { padding: 12px; } }
+@media (max-width: 520px) { .menu-cta span { display: none; } .menu-cta { padding: 12px; } }
 
 /* ── Abertura cinematográfica ──────────────────────────────────────────── */
 .cine { position: relative; height: var(--altura, 400vh); }
